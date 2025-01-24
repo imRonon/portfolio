@@ -31,9 +31,7 @@ button {
     display: flex;
     align-items: center;
     background-color: white;
-    display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%;
 }
 
