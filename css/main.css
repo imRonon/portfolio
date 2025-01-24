@@ -13,7 +13,10 @@ main {
 button {
     cursor: pointer;
 }
-
+.logo {
+    width: 70px;
+    height: 70px;
+}
 .active-text {
     color: #21232d !important;
 }
@@ -33,20 +36,27 @@ button {
     background-color: white;
     justify-content: space-between;
     width: 100%;
+    margin-bottom: 100px;
+}
+.header-mini img {
+    height: 622px;
+    width: 650px;
+    border: solid 15px #8643dc;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    background-image: url(../assets/images/bgi.jpg);
+    background-size: 100% 100%;
 }
 
-.main-providers {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 478px;
-}
 .item-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
-    width: 400px;
+    width: 600px;
 }
 .item-link {
     text-decoration: none;
@@ -66,21 +76,6 @@ button {
 }
 .item-link:hover {
     color: #000000;
-}
-
-.burger {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border-radius: 35px;
-    -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
-    -ms-border-radius: 35px;
-    -o-border-radius: 35px;
-    border: 0;
 }
 .header-mini {
     display: flex;
@@ -112,7 +107,17 @@ button {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     background-color: white;
-    color: black;
+    color: #8643dc;
+    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #341858;
+    }
+    100% {
+        text-shadow: 0 0 15px #341858, 0 0 5px #341858;
+    }
 }
 .info-btn {
     width: 200px;
@@ -275,6 +280,11 @@ button {
 }
 .app-icon {
     margin-bottom: 30px;
+    width: 60px;
+    height: 50px;
+}
+.app-card:nth-child(3) .app-icon {
+    width: 100px;
 }
 .app-name {
     font-family: Red Hat Display;
@@ -287,24 +297,24 @@ button {
     color: #000000;
 }
 .app-card:first-child {
-    border: 1px solid #ffe7f0;
-    color: #fff6fa;
+    border: 1px solid rgb(227, 56, 4);
+    background-color: rgba(255, 64, 0, 0.218);
 }
 .app-card:nth-child(2) {
-    border: 1px solid #caffe1;
-    color: #edfff5;
+    border: 1px solid rgb(32, 118, 238);
+    background-color: #2456cc4e;
 }
 .app-card:nth-child(3) {
-    border: 1px solid #ddf5ff;
-    color: #f5fcff;
+    border: 1px solid yellow;
+    background-color: #f7ff175d;
 }
 .app-card:nth-child(4) {
-    border: 1px solid #ffeec9;
-    color: #fffbf2;
+    border: 1px solid #8643dc;
+    background-color: #8543dc68;
 }
 .app-card:nth-child(5) {
-    border: 1px solid #dbffc3;
-    background: #f4ffed;
+    border: 1px solid green;
+    background: rgba(5, 255, 5, 0.31);
 }
 .connections {
     width: 100%;
@@ -382,4 +392,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+.footer {
+    padding-bottom: 100px;
 }
