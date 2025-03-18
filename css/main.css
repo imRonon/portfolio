@@ -176,15 +176,21 @@ button {
     margin-bottom: 50px;
     width: 240px;
 }
+.larger {
+    width: 300px !important;
+}
 .main1-cards {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 150px;
+    flex-wrap: wrap;
 }
 .main1-card {
-    width: 32, 3%;
+    width: 46%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .card-intro {
     display: flex;
